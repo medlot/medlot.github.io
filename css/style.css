@@ -1,0 +1,241 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+---------------------------------------------------------------- 
+# Typography 
+# General
+# Elements 
+# Forms
+# Header
+	## Navigation
+# Sections
+	## Services
+# Tabs Area
+# Article
+# Content 
+# Stage 2
+	## Percent
+	## Form Stage
+# Footer  
+# Media Queries
+# CUSTOM ANIMATION
+# RESPONSIVE DESIGN
+/* ---------------------------------------------------------------------- */
+/*  # Typography
+/* ---------------------------------------------------------------------- */
+ @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+/* ---------------------------------------------------------------------- */
+/*  # Elements
+/* ---------------------------------------------------------------------- */
+.reset_pad_left{
+	padding-left: 0 !important;
+}
+.reset_pad_right{
+	padding-right: 0 !important;
+}
+
+/* ---------------------------------------------------------------------- */
+/*  # Slider
+/* ---------------------------------------------------------------------- */
+.responsive_img {
+    border: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}  
+/* ---------------------------------------------------------------------- */
+/*  # Forms
+/* ---------------------------------------------------------------------- */
+ 
+/* ---------------------------------------------------------------------- */
+/*  # Header
+/* ---------------------------------------------------------------------- */
+ 
+ /* ---------------------------------------------------------------------- */
+/*  # Navigation
+/* ---------------------------------------------------------------------- */
+ 
+.navbar-default {
+	margin: 0 auto;
+	text-align: center;
+	border: 0px !important;
+	background-color: #fff;
+}
+.navbar-default .navbar-nav > li { 
+	 padding: 0 15px; 
+}
+.navbar-default .navbar-nav > li > a  {
+	display: inline-block;
+	 padding: 20px 0;
+	 text-align: center; 
+	 color: #00739f !important;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase; 
+}
+.navbar-default .navbar-nav > .active a  { 
+	background: transparent !important;
+	border-bottom: 5px solid #00739f;;
+}  
+ 
+.fixed-nav .navbar-nav > .active > a { 
+	border-bottom: 1px solid #fff;
+} 
+/* ---------------------------------------------------------------------- */
+/*  # Sections
+/* ---------------------------------------------------------------------- */
+.title_section{
+	position: relative;
+	margin: 60px auto;
+	margin-top: 80px;
+    font-size: 30px;
+    font-family: 'Lato';
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+}
+.title_border:after {
+	position: absolute;
+	content:'';
+	width: 80px;
+	height: 3px;
+	bottom: -20px;
+	left: 0; right: 0;
+	margin: 0 auto;
+	background-color: #000;
+}
+.prag_b{ 
+	max-width: 80%;
+	margin: 20px auto; 
+    font-size: 24px;
+    font-family: 'Lato';
+    line-height: 2;
+    text-align: center;
+    font-weight: 500;
+    color: #000;
+}
+/* ================== */
+/*  ## Boxes
+/* ================== */
+.boxes {
+	display: flex;
+}
+.box {
+	flex: 1;
+	padding: 50px !important;
+}
+.box_title {
+	text-align: center;
+    font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 2;
+}
+.box_color {
+	z-index: 999;
+	position: relative;
+}
+.box_yellow {
+	background-color: #ecad00; 
+} 
+.box_blue {
+	background-color: #00739f; 
+}
+.box_color:after {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -15px;
+    content: "";
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+}
+.box_yellow:after { 
+    border-left: 15px solid #ecad00;
+}
+.box_blue:after { 
+    border-left: 15px solid #00739f;
+}
+.box_blue.box_color_left:after {
+    right: 100%; 
+    border-left: 15px solid transparent; 
+    border-right: 15px solid #00739f;
+}
+.box_yellow.box_color_left:after {
+    right: 100%; 
+    border-left: 15px solid transparent; 
+    border-right: 15px solid #ecad00;
+}
+.box_parag, .content_table { 
+	margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Lato';
+    line-height: 2;
+    text-align: left;
+    font-weight: 500;
+    color: #000;
+}
+.box_gray {
+	background-color: #f2f2f2;
+}
+
+.btn_boxes{
+	padding: 7px 25px; 
+    color: #00739f;
+    background-color: transparent;
+    font-size: 22px;
+    margin-top: 30px;
+    outline-color: transparent !important;
+}
+.blue_btn{ 
+    border: 3px solid #00739f; 
+}
+.content_table ul {
+	margin: 0;
+	list-style: none;
+}
+.header_table{
+	padding: 10px;
+	text-align: center;
+    font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 2;
+	background-color: #00739f;
+}
+.content_table{
+	padding: 20px;
+
+}
+.content_table ul{
+	margin: 0;
+    padding: 10px;
+}
+.blue_bullet{
+	width: 12px; height: 12px;
+	display: inline-block;
+	margin-right: 10px; 
+	border-radius: 50%;
+	background-color: #00739f;
+}
+.tables_wrap {
+	display: flex !important;
+}
+.tables_wrap > div, .content_table {
+	flex: 1 !important;
+	background-color: #f2f2f2;
+	padding: 0;
+	margin-left: 15px;
+}
+/* ---------------------------------------------------------------------- */
+/*  # CUSTOM ANIMATION
+/* ---------------------------------------------------------------------- */
+ 
+/* ---------------------------------------------------------------------- */
+/*  # RESPONSIVE DESIGN
+/* ---------------------------------------------------------------------- */
+ 
