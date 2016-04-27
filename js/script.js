@@ -17,10 +17,16 @@
   );
   wow.init();  
   
+  // Update Arrow sections
   updateArrowSections();
   $( window ).resize(function() {
     updateArrowSections();
   }); 
+
+  //Close navbar when clicking on item
+  $('.nav a').on('click', function(){ 
+      $('.navbar-toggle').click() //bootstrap 3.x by Richard
+  });
 
 })(jQuery); 
 

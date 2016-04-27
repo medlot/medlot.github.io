@@ -89,6 +89,11 @@
 /* ---------------------------------------------------------------------- */
 /*  # Sections
 /* ---------------------------------------------------------------------- */
+.section {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+}
 .title_section{
 	position: relative;
 	margin: 60px auto;
@@ -331,6 +336,9 @@
 		left: 50%;
 	    right: 0;
 	    top: 112%;
+	}
+	.box_arw:after {
+	    top: 108%;		
 	}
 	.box_yellow:after { 
 	    border-left: 15px solid transparent;
