@@ -15,22 +15,12 @@
       scrollContainer: null  
     }
   );
-  wow.init(); 
-
- 
-
-
-  if ($(window).width() < 768) {changePos(); }
-  else { fixMarg(); resetPos(); }
-  $(window).scroll(function() {
-    if ($(window).width() < 768) {changePos(); }
-    else { fixMarg(); resetPos(); }
-  });
-
-
-   
-                           
-     
+  wow.init();  
+  
+  updateArrowSections();
+  $( window ).resize(function() {
+    updateArrowSections();
+  }); 
 
 })(jQuery); 
 
@@ -49,10 +39,22 @@ function resetPos(){
 }
 function fixMarg(){
    $( '.box_color' ).each(function() {
-     var boxHeight = $(this).siblings('.box_gray').height();
-     var mrgTop = (boxHeight -100) / 2;
-     $(this).children('.box_title').css('margin-top', mrgTop);
+     var $this = $(this),
+         $child = $this.children('.box_title'),
+         parentHeight = $this.height(),
+         childHeight = $child.height();
+
+     var mrgTop = (parentHeight - childHeight ) / 2;
+     $child.css('margin-top', mrgTop);
   });
 }
+function resetMarg(){
+   $( '.box_color' ).each(function() { 
+     $(this).children('.box_title').css('margin-top', '0px');
+  });
+} 
  
- 
+function updateArrowSections(){
+  if ($(window).width() <= 768) {changePos(); resetMarg();}
+  else if($(window).width() > 768) { fixMarg(); resetPos(); }
+}

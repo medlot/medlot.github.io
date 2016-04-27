@@ -4,20 +4,11 @@
 # Typography 
 # General
 # Elements 
-# Forms
 # Header
 	## Navigation
-# Sections
-	## Services
-# Tabs Area
-# Article
-# Content 
-# Stage 2
-	## Percent
-	## Form Stage
+# Sections     
 # Footer  
-# Media Queries
-# CUSTOM ANIMATION
+# Media Queries 
 # RESPONSIVE DESIGN
 /* ---------------------------------------------------------------------- */
 /*  # Typography
@@ -312,6 +303,7 @@
 /*  # RESPONSIVE DESIGN
 /* ---------------------------------------------------------------------- */
  @media (max-width: 768px) {
+
 	  .header {
 	 	height: auto;
 	    position: fixed; 
@@ -373,8 +365,9 @@
 	.tables_wrap > div, .circle_wrap, .collaboration_box{
 		margin: 20px auto; 
 	}
-	.img_boxes {
+	.img_boxes, .circle_wrap  {
 		margin: 20px auto;
+		padding: 0 !important;
 	}
 	 
 }
